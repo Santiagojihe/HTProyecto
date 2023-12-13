@@ -1,0 +1,189 @@
+*{margin: 0;}
+.Container{
+    /* width: 80%; */
+    margin: auto;
+    overflow: hidden;
+
+}
+body{
+    background: url('../img/fondo.png');
+    background-size: cover;
+    
+}
+.menu-categorias {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.menu-categorias ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Asegúrate de que sea un contenedor flexible */
+    flex-direction: column; /* Hace que la lista sea vertical */
+}
+
+.menu-categorias li {
+    padding: 10px;
+}
+
+.menu-categorias li:hover {
+    background-color: #f1f1f1;
+}
+header{
+    background-color: #403f3f;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 5px solid #bc8741;
+    background: url('../img/fondo.png');
+    text-align: center;
+    font-size: 40px;
+    font-family: "Arial", sans-serif;
+    
+}
+
+header a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Arial", sans-serif;
+    margin-top: 100px
+
+
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+    font-family: "Arial", sans-serif;
+}
+
+header nav ul li #inicio{
+    font-size: 30px;
+    color: #bc8741;
+    font-weight: 700;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+    
+}
+
+main{
+    margin: auto;
+    background: url(/img/zona.png.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    max-width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Arial", sans-serif;
+    padding: 20px;
+    margin-top: 20px
+    
+}
+
+ img{
+    position: absolute; 
+    top: 10px; /* Alinea la imagen en la esquina superior */
+    left: 50px; /* Alinea la imagen en la esquina izquierda */
+    width: 69px; /* Ancho de la imagen */
+    height: 65px; 
+    display: inline-block;
+    display: block;
+}
+
+.enlace-subrayado {
+    text-decoration: underline; /* Agrega subrayado */
+    color: #bc8741; /* Cambia el color del texto */
+    margin-left: 75px;
+    margin-top: 100px;
+    right: 10px;
+  }
+
+.search input{
+    width: 50%;
+    height: 40px; /* Altura del div */
+    background-color: #f0f0f0; /* Color de fondo */
+    border: 1px solid #ccc; /* Borde con color gris claro */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px; /* Margen exterior */
+    font-size: 30px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+    border-radius: 20px;
+    margin-top: 30px;
+    
+}
+ 
+.fondo {
+    margin-top: 86px;
+  text-shadow: 2px 2px 2px #000;
+
+}
+
+    .boton-con-fondo {
+        background-image: url('../img/lupa.png'); /* Ruta de tu imagen */
+        background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el botón */
+        width: 50px; /* Ancho del botón */
+        height: 50px; /* Altura del botón */
+        border: none; /* Quita el borde del botón si lo deseas */
+        color: #fff; /* Color del texto */
+        font-size: 16px; /* Tamaño de la fuente */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    }
+
+    .contenedor{
+        padding: 60px 230px;
+        width: 100%;
+        max-width: 1200px;
+        overflow: hidden;
+    }
+
+.galeria-port{
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .imagen-port{
+    width: 1000px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    margin-right: 10px;
+    padding-right: 100px;
+    flex: 1;
+  text-align: center;
+  }
+  .imagen-port > img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  .hover-galeria p{
+    color: #fff;
+  }
+
+  .imagen-port:hover .hover-galeria{
+    transform: scale(1);
+   }
+
+   .imagen-flex {
+    flex: 1; /* Permite que las imágenes se expandan o contraigan de manera uniforme */
+    max-width: 100%; /* Evita que las imágenes se salgan del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
